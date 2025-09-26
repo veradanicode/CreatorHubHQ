@@ -70,9 +70,10 @@ env
 Copy code
 MONGO_URI=your_database_url
 JWT_SECRET=supersecret
-PORT=5000
+PORT=500
+```
 📂 Project Structure
-bash
+```bash
 Copy code
 creatorhub/
 │── frontend/           # Next.js app
@@ -92,13 +93,15 @@ creatorhub/
 │
 │── docs/               # pitch deck, diagrams, hackathon notes
 │── .env.example        # shared env variables
-│── README.md
+│── README.md 
+```
 👥 Team
+
 Name	Role	GitHub
-Your Name	Full-stack Dev	@username
-Teammate 1	Frontend Dev	@username
-Teammate 2	Backend Dev	@username
-Teammate 3	Designer	@username
+Vera Daniel	Backend Dev/Team Lead	@veradanicode
+Akinola Bright	Frontend Dev	@Brightdotdev
+Anyia Favour	mobile Dev	@favjoyce
+
 
 🎯 Hackathon Vision
 “CreatorHub empowers creators with a single, beautiful hub for all their work — backed by analytics and customization, making it easier for fans to discover, engage, and connect.”
