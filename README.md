@@ -40,39 +40,54 @@ Built with **React.js (frontend)**, **Node.js/Express (backend)**, and **Storybl
 ### 1️⃣ Clone the Repo  
 ```bash
 git clone https://github.com/your-team/creatorhub.git
+```
+```bash
 cd creatorhub
+```
 2️⃣ Setup Frontend
-bash
-Copy code
+```bash
 cd frontend
+```
+```bash
 npm install
+```
+```bash
 npm run dev
+```
+
 Frontend runs on http://localhost:3000
 
 3️⃣ Setup Backend
-bash
-Copy code
+```bash
 cd backend
+```
+```bash
 npm install
+```
+```bash
 npm run dev
+```
 Backend runs on http://localhost:5000
 
 4️⃣ Environment Variables
+---
 Create .env.local in frontend/:
 
 env
-Copy code
+```bash
 STORYBLOK_API_TOKEN=your_token_here
 NEXT_PUBLIC_API_URL=http://localhost:5000
+```
 Create .env in backend/:
 
 env
-Copy code
+```bash
 MONGO_URI=your_database_url
 JWT_SECRET=supersecret
 PORT=500
 ```
 📂 Project Structure
+---
 ```bash
 Copy code
 creatorhub/
@@ -96,13 +111,15 @@ creatorhub/
 │── README.md 
 ```
 👥 Team
-
+---
+```bash
 Name	Role	GitHub
 Vera Daniel	Backend Dev/Team Lead	@veradanicode
 Akinola Bright	Frontend Dev	@Brightdotdev
 Anyia Favour	mobile Dev	@favjoyce
-
+```
 
 🎯 Hackathon Vision
+---
 “CreatorHub empowers creators with a single, beautiful hub for all their work — backed by analytics and customization, making it easier for fans to discover, engage, and connect.”
 
