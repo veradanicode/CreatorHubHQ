@@ -9,7 +9,7 @@ export default function Page({ blok }) {
   
 
   // filter out banner so it doesn’t render in the main loop
-  const body = blok.body?.filter((b) => b.component !== "theme")
+  const body = blok.body?.filter((b) => b.component !== "theme") ?? []
 
 
 

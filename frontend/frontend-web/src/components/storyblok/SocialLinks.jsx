@@ -5,6 +5,21 @@ import { FaXTwitter } from "react-icons/fa6";
 import { SiApplemusic } from "react-icons/si";
 
 
+// src/components/storyblok/SocialLinks.jsx
+
+import {
+  FaFacebookF,
+  FaYoutube,
+  FaInstagram,
+  FaTwitch,
+  FaLinkedin,
+  FaSpotify,
+  FaGithub,
+  FaGlobe
+} from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa";        // ensure this import exists
+import { SiApplemusic } from "react-icons/si";      // ensure this import exists
+
 const getSocialIcon = (platform) => {
   switch (platform.toLowerCase()) {
     case "instagram":
@@ -26,9 +41,8 @@ const getSocialIcon = (platform) => {
     case "twitch":
       return FaTwitch
     default:
-      return Globe
-  }
-}
+      return FaGlobe
+}}
 
 export function SocialLinks({ links }) {
   if (!links.length) return null

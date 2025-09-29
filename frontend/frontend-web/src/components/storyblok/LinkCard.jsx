@@ -5,7 +5,7 @@ export function LinkCard({ blok }) {
  
     console.log(blok)
   return (
-    <a href={blok.url} target="_blank">
+   <a href={blok.url} target="_blank" rel="noopener noreferrer">
    <Card className="w-full px-4 cursor-pointer">
 
       <CardHeader className="flex items-center justify-start  gap-2 p-0">

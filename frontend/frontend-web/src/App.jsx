@@ -6,7 +6,8 @@ import { useStoryblok, StoryblokComponent } from "@storyblok/react";
   it renders the top-level blok (likely a 'page' component).
 */
 export default function App() {
-  const slug = window.location.pathname === "/" ? "home" : window.location.pathname.replace(/^\//, "");
+  const path = window.location.pathname.replace(/^\/+/, "").replace(/\/+$/, "");
+  const slug = path === "" ? "home" : path;
   const story = useStoryblok(slug, { version: "draft" });
 
   if (!story || !story.content) {

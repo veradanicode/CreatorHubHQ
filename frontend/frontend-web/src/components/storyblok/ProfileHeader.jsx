@@ -15,10 +15,11 @@ export function ProfileHeader({blok}) {
         <Avatar 
           className="w-28 h-28 rounded-full shadow-lg border border-border object-cover" >
 
-          <AvatarImage src={blok.avatar.filename} alt={blok.name || "Avatar"}
-          className="w-28 h-28 rounded-full shadow-lg border border-border object-cover"
-          
-          />
+          <AvatarImage
+            src={blok.avatar?.filename ?? ""}
+            alt={blok.name || "Avatar"}
+            className="w-28 h-28 rounded-full shadow-lg border border-border object-cover"
+          />        
           <AvatarFallback 
           className="w-28 h-28 rounded-full shadow-lg border border-border object-cover"
           
