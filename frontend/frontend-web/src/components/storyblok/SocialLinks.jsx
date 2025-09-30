@@ -1,11 +1,5 @@
 
 import { Button } from "../ui/button"
-import { FaFacebookF,FaYoutube,FaInstagram, FaTwitch ,FaLinkedin ,FaSpotify,FaGithub } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { SiApplemusic } from "react-icons/si";
-
-
-// src/components/storyblok/SocialLinks.jsx
 
 import {
   FaFacebookF,
@@ -16,16 +10,15 @@ import {
   FaSpotify,
   FaGithub,
   FaGlobe
-} from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa";        // ensure this import exists
+} from "react-icons/fa";      // ensure this import exists
 import { SiApplemusic } from "react-icons/si";      // ensure this import exists
-
+import { BsTwitterX } from "react-icons/bs";
 const getSocialIcon = (platform) => {
   switch (platform.toLowerCase()) {
     case "instagram":
       return FaInstagram
     case "twitter":
-      return FaXTwitter
+      return BsTwitterX
     case "youtube":
       return FaYoutube
     case "linkedin":
@@ -45,6 +38,7 @@ const getSocialIcon = (platform) => {
 }}
 
 export function SocialLinks({ links }) {
+  console.log(links)
   if (!links.length) return null
 
   return (
@@ -57,7 +51,7 @@ export function SocialLinks({ links }) {
             variant="ghost"
             size="sm"
             className="w-10 h-10 p-0 rounded-full bg-muted/50 hover:bg-muted"
-            onClick={() => window.open(link.url, "_blank", "noopener,noreferrer")}
+            onClick={() => window.open(link.url.cached_url, "_blank", "noopener,noreferrer")}
           >
             <Icon className="w-4 h-4" />
           </Button>

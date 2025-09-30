@@ -5,8 +5,12 @@ export function LinkCard({ blok }) {
  
     console.log(blok)
   return (
-   <a href={blok.url} target="_blank" rel="noopener noreferrer">
-   <Card className="w-full px-4 cursor-pointer">
+    
+   <Card className="w-full px-4 cursor-pointer"
+
+      onClick={() => window.open(blok.url.url, "_blank", "noopener,noreferrer")}
+          
+   >
 
       <CardHeader className="flex items-center justify-start  gap-2 p-0">
 {
@@ -27,7 +31,6 @@ export function LinkCard({ blok }) {
         </div>
       </CardHeader>
     </Card>
-    </a>
   )
 }
 
